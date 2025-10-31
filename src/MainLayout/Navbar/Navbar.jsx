@@ -1,6 +1,9 @@
-import logo from "../../assets/image/logo.jpg"
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
+  const [menuOpen,setMenuOpen]=useState(false)
 
   const link = (
     <>
@@ -19,46 +22,28 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-[#e0f7f4] shadow ">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            {link}
-          </ul>
-        </div>
-        <div className="h-12">
-            <img className="h-full" src={logo} alt="" />
-            
-        </div>
+    <nav className="flex justify-between items-center px-8 bg-[#ffe8e4] h-16">
+      <div>
+        <h2 className="text-[24px] font-extrabold text-[#2b1c1c] inter-font">Voucher<span className="text-[#FF6D00]">BD</span></h2>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-            {link}
-        </ul>
+     
+       <ul className="lg:flex justify-center items-center  gap-4">
+        <li><NavLink>Home</NavLink></li>
+        <li><NavLink>Brands</NavLink></li>
+        <li><NavLink>my-profile</NavLink></li>
+        <li><NavLink>About Dev</NavLink></li>
+      </ul>
+    
+      <div className="flex justify-center items-center gap-4">
+        <button>
+          {" "}
+          <Link to="/login">Login</Link>
+        </button>
+        <button>
+          <Link to="/signUp">sign Up</Link>
+        </button>
       </div>
-      <div className="navbar-end">
-        <a className="btn bg-[#1C1C4D] text-white">Login</a>
-      </div>
-    </div>
+    </nav>
   );
 };
 

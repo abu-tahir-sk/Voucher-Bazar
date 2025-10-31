@@ -3,7 +3,7 @@ import Navbar from "./Navbar/Navbar";
 
 const Main = () => {
       return (
-            <div className="google-font ">
+            <div className="noto-sans">
                   <Navbar></Navbar>
                   <Outlet></Outlet>
             </div>

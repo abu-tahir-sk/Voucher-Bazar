@@ -1,0 +1,9 @@
+<!-- VouchBD - SVG logo -->
+<svg width="320" height="72" viewBox="0 0 320 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VouchBD logo">
+  <rect width="320" height="72" rx="10" fill="#ffffff"></rect>
+  <g transform="translate(14,12)">
+    <path d="M0 28 C0 12 12 0 28 0 L80 0 L80 28 L28 28 C12 28 0 40 0 56 Z" fill="#FFB300"></path>
+    <text x="96" y="32" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="600" fill="#0F6FF0">Vouch</text>
+    <text x="96" y="54" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="700" fill="#2F3A45">BD</text>
+  </g>
+</svg>
