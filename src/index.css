@@ -6,6 +6,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@layer base {
+  body {
+    background-color: white;
+  }
+}
+
 .inter-font {
   font-family: "Inter", sans-serif;
 }
