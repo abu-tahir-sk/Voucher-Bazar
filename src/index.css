@@ -19,3 +19,13 @@
 .noto-sans{
   font-family: "Noto Sans", sans-serif;
 }
+
+
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto !important;
+}
