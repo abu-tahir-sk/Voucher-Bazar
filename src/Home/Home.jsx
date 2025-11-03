@@ -1,6 +1,8 @@
 import Banner from "../components/Banner";
 import BrandsSell from "../components/BrandsSell";
 import TopBrands from "../components/TopBrands";
+import TopDeals from "../components/TopDeals";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 const Home = () => {
       return (
@@ -14,6 +16,12 @@ const Home = () => {
                   </div>
                   <div>
                         <BrandsSell/>
+                  </div>
+                  <div>
+                        <TopDeals/>
+                  </div>
+                  <div>
+                        <WhyChooseUs/>
                   </div>
             </div>
       );
