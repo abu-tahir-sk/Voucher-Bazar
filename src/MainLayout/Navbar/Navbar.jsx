@@ -1,45 +1,56 @@
-import { useState } from "react";
-import { RiCloseLargeFill } from "react-icons/ri";
-import { TiThMenu } from "react-icons/ti";
+
 import { Link, NavLink } from "react-router-dom";
+
+
 
 const Navbar = () => {
   
+ 
 
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center px-8 bg-[#ffe8e4] h-16">
-      <div className="flex justify-start items-center gap-2 w-full">
-        <div className="text-3xl md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <RiCloseLargeFill /> : <TiThMenu />}
+     <header className="bg-white shadow-sm">
+      <div className="max-w-6xl mx-auto flex items-center gap-4 p-3">
+        <div className="flex items-center gap-3">
+          <Link to="/" className="text-xl font-bold text-yellow-600">Discount PRO</Link>
         </div>
-        <h2 className="text-[26px] font-extrabold text-[#2b1c1c] inter-font">
-          Voucher<span className="text-[#FF6D00]">BD</span>
-        </h2>
-      </div>
 
-      <ul className={
-        `md:flex justify-center duration-1000 items-center text-[14px] gap-4 bg-[#ffe8e4] p-3 w-full  md:h-16 absolute md:static ${menuOpen ? "top-[64px] left-0":"-top-32"}`
-      }>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/brands">Brands</NavLink></li>
-        <li><NavLink to="/myProfile">My Profile</NavLink></li>
-        <li><NavLink to="/aboutDev">About Dev</NavLink></li>
-        
-       
-      </ul>
+        <nav className="mx-auto hidden md:flex items-center gap-6">
+          <NavLink to="/" className="flex items-center gap-2">
+            <span></span> Home
+          </NavLink>
+          <NavLink to="/brands" className="flex items-center gap-2">
+            <span></span> Brands
+          </NavLink>
+          
+            <NavLink to="/my-profile" className="flex items-center gap-2">
+              <span></span> My Profile
+            </NavLink>
+         
+          <NavLink to="/about" className="flex items-center gap-2">
+            <span></span> About Dev
+          </NavLink>
+        </nav>
 
-      <div className="flex justify-end items-center gap-4 w-full">
-        <button className="bg-[#FF6D00] btn text-white">
-          {" "}
-          <Link to="/login">Login</Link>
-        </button>
-        <button className="bg-[#f6e4d2] btn text-[#000000] border-2 border-[#FF6D00]">
-          <Link to="/signUp">sign Up</Link>
-        </button>
+        <div className="ml-auto flex items-center gap-3">
+          {/* {user ? (
+            <>
+              <div className="hidden sm:flex flex-col text-sm text-right mr-2">
+                <span className="font-medium">Welcome, {user.name || user.email}</span>
+                <span className="text-xs text-gray-500">{user.email}</span>
+              </div>
+              <img src={user.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name||user.email)}`} alt="avatar" className="w-9 h-9 rounded-full object-cover"/>
+              <button onClick={() => signOut(auth)} className="px-3 py-1 bg-gray-100 rounded">Log out</button>
+            </>
+          ) : ( */}
+            {/* <> */}
+              <Link to="/login" className="px-3 py-1 bg-yellow-400 text-white rounded">Login</Link>
+              <Link to="/register" className="px-3 py-1 border rounded">Register</Link>
+            {/* </>
+          )} */}
+        </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

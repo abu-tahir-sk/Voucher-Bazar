@@ -22,7 +22,7 @@ const BrandsSell = () => {
             <p className="text-sm mt-2">{b.description}</p>
             <div className="mt-3 flex items-center justify-between">
               <div>Coupons: <strong>{b.coupons.length}</strong></div>
-              <Link to={`/brand/${b._id}`} className="px-3 py-1 bg-yellow-400 text-white rounded">View Deals</Link>
+           
             </div>
           </div>
         ))}
