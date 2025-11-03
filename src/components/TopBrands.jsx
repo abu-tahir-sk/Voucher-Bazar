@@ -1,22 +1,25 @@
-import { useEffect, useState } from "react";
-import Brand from "./brand";
 import Marquee from "react-fast-marquee";
-
+import brandsData from "../../public/brands.json";
+import { Link } from "react-router-dom";
 const TopBrands = () => {
-  const [brands, setBrands] = useState([]);
-
-  useEffect(() => {
-    fetch("./brands.json")
-      .then((res) => res.json())
-      .then((data) => setBrands(data));
-  }, []);
   return (
-    <Marquee pauseOnHover={true} className="">
-      
-      {brands.map((brand) => (
-        <Brand key={brand._id} brand={brand} />
-      ))}
-    </Marquee>
+    <div className="my-6">
+      <div className="max-w-6xl mx-auto">
+        <Marquee pauseOnHover gradient={false} speed={30}>
+            {brandsData.map((b) => (
+              <div key={b._id} className="mx-12 flex items-center">
+                <Link to={`/details/${b._id}`}>
+                <img
+                  src={b.brand_logo}
+                  alt={b.brand_name}
+                  className="w-24 h-24 object-contain rounded-full bg-white p-2"
+                />
+          </Link>
+              </div>
+            ))}
+        </Marquee>
+      </div>
+    </div>
   );
 };
 

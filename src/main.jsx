@@ -4,6 +4,10 @@ import './index.css'
 import {  RouterProvider } from 'react-router-dom'
 import router from './router/router.jsx'
 import AuthProvider from './components/AuthProvider/AuthProvider.jsx'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
