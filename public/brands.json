@@ -1,0 +1,117 @@
+[
+  {
+    "_id": "b1",
+    "brand_name": "Daraz",
+    "rating": 4.8,
+    "description": "Bangladesh's largest online shopping platform offering electronics, fashion, groceries & more.",
+    "brand_logo": "https://i.ibb.co/PZzH3CY0/download.png",
+    "shop_link": "https://www.daraz.com.bd",
+    "category": "E-commerce",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "DARAZ2025",
+        "description": "Flat 15% off on all products",
+        "expiry_date": "2025-12-31",
+        "condition": "Minimum purchase BDT 500",
+        "coupon_type": "Percentage"
+      }
+     
+    ]
+  },
+  {
+    "_id": "b2",
+    "brand_name": "Pickaboo",
+    "rating": 4.6,
+    "description": "Trusted online electronics & gadgets store in Bangladesh.",
+    "brand_logo": "https://i.ibb.co/0R6H0drf/pikk.png",
+    "shop_link": "https://www.pickaboo.com",
+    "category": "Electronics",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "PICK20",
+        "description": "20% off on smartphones",
+        "expiry_date": "2025-08-10",
+        "condition": "Only on prepaid orders",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "b3",
+    "brand_name": "Foodpanda",
+    "rating": 4.5,
+    "description": "Online food and grocery delivery platform.",
+    "brand_logo": "https://i.ibb.co/vxpthTGL/fod.png",
+    "shop_link": "https://www.foodpanda.com.bd",
+    "category": "Food Delivery",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "FOODIE10",
+        "description": "10% off for new users",
+        "expiry_date": "2025-06-15",
+        "condition": "First order only",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "b4",
+    "brand_name": "Bata",
+    "rating": 4.4,
+    "description": "Popular footwear brand in Bangladesh.",
+    "brand_logo": "https://i.ibb.co/fzNmxbR5/btt.png",
+    "shop_link": "https://www.batabd.com",
+    "category": "Fashion",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "SHOES15",
+        "description": "15% off on shoes",
+        "expiry_date": "2025-11-01",
+        "condition": "All categories",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "b5",
+    "brand_name": "Chaldal",
+    "rating": 4.7,
+    "description": "Online grocery delivery service across Bangladesh.",
+    "brand_logo": "https://i.ibb.co/k6gGWwVK/Chaldal.png",
+    "shop_link": "https://www.chaldal.com",
+    "category": "Grocery",
+    "isSaleOn": false,
+    "coupons": [
+      {
+        "coupon_code": "GROCERY5",
+        "description": "5% discount on groceries",
+        "expiry_date": "2025-04-30",
+        "condition": "Selected products only",
+        "coupon_type": "Percentage"
+      }
+    ]
+  },
+  {
+    "_id": "b6",
+    "brand_name": "Aarong",
+    "rating": 4.9,
+    "description": "Premium lifestyle and fashion brand in Bangladesh.",
+    "brand_logo": "https://i.ibb.co/MDygcHWx/Aarong.png",
+    "shop_link": "https://www.aarong.com",
+    "category": "Fashion",
+    "isSaleOn": true,
+    "coupons": [
+      {
+        "coupon_code": "AARONG2025",
+        "description": "25% discount on clothing",
+        "expiry_date": "2025-09-15",
+        "condition": "New arrivals excluded",
+        "coupon_type": "Percentage"
+      }
+    ]
+  }
+]
