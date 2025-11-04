@@ -10,7 +10,7 @@ const Home = () => {
                 <div>
                   <Banner/>
                   </div> 
-                  <div>
+                  <div className="my-8">
                         <h2 className="text-center text-3xl font-extrabold">Top Brands</h2>
                         <TopBrands/>
                   </div>

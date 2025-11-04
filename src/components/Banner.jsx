@@ -5,25 +5,25 @@ const Banner = () => {
    const slides = [
     {
       id: 1,
-      img: "https://i.ibb.co/3fK3J4x/discount-banner1.jpg",
+      img: "https://i.ibb.co/RGx359nw/depositphotos-516678858-stock-illustration-positive-black-lady-with-shopper.webp",
       title: "Save Big on Top Brands",
       subtitle: "Collect coupons & enjoy exclusive discounts!"
     },
     {
       id: 2,
-      img: "https://i.ibb.co/tPgGZrG/coupon-banner.jpg",
+      img: "https://i.ibb.co/Rpwxy1df/STU-Discounts-1024x511.jpg",
       title: "Instant Coupon Access",
       subtitle: "No signup required — Copy & Save instantly!"
     },
     {
       id: 3,
-      img: "https://i.ibb.co/wz6ZpDV/shopping-discount-banner.jpg",
+      img: "https://i.ibb.co/35908BKx/slide2-1024x380.jpg",
       title: "Get The Best Deals",
       subtitle: "Biggest offers from top Bangladeshi stores"
     }
   ];
   return (
-    <div className="w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-md">
+    <div className="w-full h-[300px] md:h-[450px] rounded-xl overflow-hidden shadow-md">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
@@ -38,10 +38,10 @@ const Banner = () => {
               <img
                 src={slide.img}
                 alt={slide.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
               />
-              <div className="absolute inset-0 bg-black/5 bg-opacity-40 flex flex-col items-center justify-center text-center text-white p-4">
-                <h2 className="text-2xl md:text-4xl font-bold drop-shadow">
+              <div className="absolute inset-0  bg-opacity-40 flex flex-col items-center justify-center text-center bg-white/10 p-4">
+                <h2 className="text-2xl md:text-4xl font-bold drop-shadow text-black/70">
                   {slide.title}
                 </h2>
                 <p className="mt-2 md:text-lg">{slide.subtitle}</p>

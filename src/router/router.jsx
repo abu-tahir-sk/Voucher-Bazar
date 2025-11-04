@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Errorpage from "../components/Errorpage";
 import Details from "../components/details";
 import Brands from "../MainLayout/Navbar/Brands";
+import About from "../components/About";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path:"/brands",
         element:<Brands/>
+      },
+      {
+        path:"/about",
+        element:<About/>
       },
       {
         path: "/details/:__id",

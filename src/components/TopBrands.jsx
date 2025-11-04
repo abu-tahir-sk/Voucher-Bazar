@@ -3,11 +3,11 @@ import brandsData from "../../public/brands.json";
 import { Link } from "react-router-dom";
 const TopBrands = () => {
   return (
-    <div className="my-6">
+    <div className="">
       <div className="max-w-6xl mx-auto">
         <Marquee pauseOnHover gradient={false} speed={30}>
             {brandsData.map((b) => (
-              <div key={b._id} className="mx-12 flex items-center">
+              <div key={b._id} className="mx-12 flex items-center hover:bg-white hover:shadow-xl border border-white/10">
                 <Link to={`/details/${b._id}`}>
                 <img
                   src={b.brand_logo}
