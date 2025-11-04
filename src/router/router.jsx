@@ -10,6 +10,7 @@ import MyProfile from "../components/MyProfile";
 import SignIn from "../components/SignIn";
 import SignUP from "../components/SignUP";
 import PublicRoute from "./PublicRoute";
+import UpdateProfile from "../MainLayout/Navbar/UpdateProfiel";
 
 
 
@@ -53,6 +54,15 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/brands.json"),
+      },
+      {
+        path: "/update-profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />
+          </PrivateRoute>
+        ),
+        
       },
     ],
   },

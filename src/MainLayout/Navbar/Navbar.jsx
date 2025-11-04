@@ -41,13 +41,13 @@ const Navbar = () => {
                 <span className="text-xs text-gray-500">{user.email}</span>
               </div>
               <img src={user.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user.name||user.email)}`} alt="avatar" className="w-9 h-9 rounded-full object-cover"/>
-              <button onClick={handleLogOUt} className="px-3 py-1 bg-gray-100 rounded">Log out</button>
+              <button onClick={handleLogOUt} className="px-3 py-2 bg-yellow-400 text-white rounded">Log out</button>
             </>
           ) : (
            <> 
           <Link
             to="/login"
-            className="px-3 py-1 bg-yellow-400 text-white rounded"
+            className="px-3 py-2 bg-yellow-400 text-white rounded"
           >
             Login
           </Link>
