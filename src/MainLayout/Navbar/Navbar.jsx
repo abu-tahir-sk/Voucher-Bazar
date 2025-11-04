@@ -17,18 +17,18 @@ const Navbar = () => {
 
         <nav className="mx-auto hidden md:flex items-center gap-6">
           <NavLink to="/" className="flex items-center gap-2">
-            <span></span> Home
+             Home
           </NavLink>
           <NavLink to="/brands" className="flex items-center gap-2">
-            <span></span> Brands
+             Brands
           </NavLink>
           
             <NavLink to="/my-profile" className="flex items-center gap-2">
-              <span></span> My Profile
+               My Profile
             </NavLink>
          
           <NavLink to="/about" className="flex items-center gap-2">
-            <span></span> About Dev
+            About Dev
           </NavLink>
         </nav>
 

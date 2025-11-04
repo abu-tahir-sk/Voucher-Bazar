@@ -7,12 +7,14 @@ import AuthProvider from './components/AuthProvider/AuthProvider.jsx'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { ToastContainer } from 'react-toastify'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <AuthProvider>
      <RouterProvider router={router}/>
+     <ToastContainer position="top-center" />
   </AuthProvider>
   </StrictMode>,
 )

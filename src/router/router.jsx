@@ -1,19 +1,30 @@
-import {
-  createBrowserRouter
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "../MainLayout/Main";
 import Home from "../Home/Home";
+import Errorpage from "../components/Errorpage";
+import Details from "../components/details";
+import Brands from "../MainLayout/Navbar/Brands";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    children:[
+    errorElement: <Errorpage />,
+    children: [
       {
-            path:"/",
-            element:<Home/>,
-      }
-    ]
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path:"/brands",
+        element:<Brands/>
+      },
+      {
+        path: "/details/:__id",
+        element: <Details />,
+        loader: () => fetch("/brands.json"),
+      },
+    ],
   },
 ]);
 

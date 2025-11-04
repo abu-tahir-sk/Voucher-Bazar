@@ -1,6 +1,6 @@
 
 import brandsData from "../../public/brands.json";
-import { Link } from "react-router-dom";
+
 
 const BrandsSell = () => {
         const onSale = brandsData.filter(b => b.isSaleOn);
