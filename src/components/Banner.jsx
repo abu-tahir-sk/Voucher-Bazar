@@ -5,13 +5,13 @@ const Banner = () => {
    const slides = [
     {
       id: 1,
-      img: "https://i.ibb.co/RGx359nw/depositphotos-516678858-stock-illustration-positive-black-lady-with-shopper.webp",
+      img: "https://i.ibb.co/BK3tDjhF/images.jpg",
       title: "Save Big on Top Brands",
       subtitle: "Collect coupons & enjoy exclusive discounts!"
     },
     {
       id: 2,
-      img: "https://i.ibb.co/Rpwxy1df/STU-Discounts-1024x511.jpg",
+      img: "https://i.ibb.co/PZmDthJ1/NB-copy-6.png",
       title: "Instant Coupon Access",
       subtitle: "No signup required — Copy & Save instantly!"
     },
@@ -23,7 +23,7 @@ const Banner = () => {
     }
   ];
   return (
-    <div className="w-full h-[300px] md:h-[450px] rounded-xl overflow-hidden shadow-md">
+    <div className="max-w-6xl mx-auto h-[300px] md:h-[450px] rounded-xl overflow-hidden ">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
@@ -40,8 +40,8 @@ const Banner = () => {
                 alt={slide.title}
                 className="w-full h-full object-fill"
               />
-              <div className="absolute inset-0  bg-opacity-40 flex flex-col items-center justify-center text-center bg-white/10 p-4">
-                <h2 className="text-2xl md:text-4xl font-bold drop-shadow text-black/70">
+              <div className="absolute inset-0  bg-opacity-40 flex flex-col items-center justify-center text-center bg-black/40 text-white  p-4">
+                <h2 className="text-2xl md:text-4xl font-bold drop-shadow ">
                   {slide.title}
                 </h2>
                 <p className="mt-2 md:text-lg">{slide.subtitle}</p>

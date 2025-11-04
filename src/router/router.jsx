@@ -5,6 +5,13 @@ import Errorpage from "../components/Errorpage";
 import Details from "../components/details";
 import Brands from "../MainLayout/Navbar/Brands";
 import About from "../components/About";
+import PrivateRoute from "./PrivateRoute";
+import MyProfile from "../components/MyProfile";
+import SignIn from "../components/SignIn";
+import SignUP from "../components/SignUP";
+import PublicRoute from "./PublicRoute";
+
+
 
 const router = createBrowserRouter([
   {
@@ -17,16 +24,34 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path:"/brands",
-        element:<Brands/>
+        path: "/brands",
+        element: <Brands />,
       },
       {
-        path:"/about",
-        element:<About/>
+        path: "/my-profile",
+        element: <PrivateRoute><MyProfile /></PrivateRoute>,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        
+        path: "/login",
+        element: <PublicRoute><SignIn /></PublicRoute>,
+      
+      },
+      {
+        path: "/register",
+        element: <SignUP />,
       },
       {
         path: "/details/:__id",
-        element: <Details />,
+        element: (
+          <PrivateRoute>
+            <Details />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/brands.json"),
       },
     ],
