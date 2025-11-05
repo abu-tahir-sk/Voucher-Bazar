@@ -2,7 +2,7 @@
 
 **Project**: Discount PRO — a single page coupon collecting application for Bangladesh e-commerce.
 
-**Live**: *(Add your live URL after deployment)*
+**Live**: https://discount-pro-002.netlify.app/
 
 ## Purpose
 Collect coupons and voucher codes across popular stores so users can find deals, copy codes quickly, and save money.
