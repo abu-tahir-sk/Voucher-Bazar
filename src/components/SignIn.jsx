@@ -19,20 +19,20 @@ const SignIn = () => {
       console(result.user)
       navigate("/")
     })
-    .catch(error=>{
-      console.log("ERROR", error.message)
+    .catch(()=>{
+    
     })
   };
 
   const handleGoogle =  () => {
     setError("");
     handleGoogleLogin()
-    .then(result=>{
-      console.log(result)
+    .then(()=>{
+      
       navigate("/")
     })
-    .catch(error =>{
-      console.log(error)
+    .catch(() =>{
+      
     })
   };
 

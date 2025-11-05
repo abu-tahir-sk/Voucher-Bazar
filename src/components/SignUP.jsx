@@ -48,8 +48,8 @@ const SignUP = () => {
         updateUserProfile({
           displayName: name,
           photoURL: photo,
-        }).then((res) => {
-          console.log(res);
+        }).then(() => {
+        
           toast.success("Registration Successful!");
           navigate("/");
         });

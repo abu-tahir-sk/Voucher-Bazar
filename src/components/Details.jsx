@@ -6,7 +6,6 @@ const Details = () => {
   const data = useLoaderData();
 
   const brand = data.find((brand) => brand._id === __id);
-  console.log(brand);
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
